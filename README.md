@@ -1,5 +1,5 @@
 ![Autocover Artwork](autocover_artwork.png)
-# Compliments
+# Autocover
 
 Select a FRAME from your design to easily make a "Cover" page for your design files.  Figma will then show this cover image in your project view instead of a zoomed out view of the first page of your design document.
 
@@ -14,7 +14,7 @@ The two main files are ***code.ts*** and ***ui.html***.  Figma **strongly** sugg
 - The dimensions for the frame of your plugin are set as options in *code.ts* in the **figma.showUI(...)** line.  When creating a new empty plugin, Figma leaves this out.
 - If using jQuery (or similar) all document.ready / $(function(){... code runs correctly because your plugin is shown in an iFrame.
 - This is stated all throughout Figma's docs but I will repeat it here.  Your plugin code and html/iframe code are sandboxed but can message back and forth.  Thus, your *code.ts* file can ONLY access the figma design document and your *ui.html* can ONLY access you plugin's UI.
-- Lastly, the Figma team was ***VERY*** helpful when reviewing this plugin.  The review only took 2 days (though they say it can take anywhere from 2-5 days).  They not only accepted the plugin but gave me some feedback, constructive criticism, and encouragement.
+- Lastly, the Figma team was ***VERY*** helpful when reviewing my last plugin.  The review only took 2 days (though they say it can take anywhere from 2-5 days).  They not only accepted the plugin but gave me some feedback, constructive criticism, and encouragement.
 
 # Have fun
 ### If this helps you then drop me a line: [AndrewGene](https://twitter.com/AndrewGene)
