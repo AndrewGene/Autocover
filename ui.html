@@ -1,0 +1,61 @@
+<div id="congrats">
+<img src='https://figmacompliments.blob.core.windows.net/figmablob/cover_art.png' alt='you have a new cover page' width="400">
+<h2>Next Steps</h2>
+<ol>
+  <li>Set the <i>Cover Text</i></li>
+  <li>(optionally) Adjust the background color of the <i>Cover Art</i> frame and the page background</li>
+</ol>
+</div>
+<div id="error">
+  <span>Please select a <b>frame</b> and run this plugin again</span>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <style>    
+    *{margin:0px; padding:0px;}
+    #congrats, #error {
+      display:none;
+      padding-bottom:20px;
+    }
+    body{
+      font-family: sans-serif;
+      width: 400px;
+    }
+    h2{
+      margin:20px;
+    }
+    ol{
+      margin-left:40px;
+      display:block;
+    }
+    ol li {
+      font-weight:lighter;
+      margin-top:20px;
+    }
+  </style>
+<script>
+$(function(){
+  //console.log("dom loaded");
+  parent.postMessage({ pluginMessage: { type: 'getCurrentSelectedFrame' } }, '*'); 
+});
+
+onmessage = (event) => {  
+  if (event.data.pluginMessage === "loaded"){
+    //removed
+  }  
+  else{
+    console.log(event);
+    if (event.data.pluginMessage === "no selection"){           
+      $("#error").show();
+    }
+    else if (event.data.pluginMessage === "not frame"){
+      $("#error").show();
+    }
+    else{
+      $("#congrats").show();
+    }
+  }
+}
+</script>

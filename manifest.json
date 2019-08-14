@@ -1,0 +1,7 @@
+{
+  "name": "Autocover",
+  "id": "742583620684903056",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html"
+}
