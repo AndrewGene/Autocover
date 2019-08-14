@@ -1,7 +1,7 @@
-![Compliments Artwork](Artwork.png)
+![Autocover Artwork](autocover_artwork.png)
 # Compliments
 
-Use this simple plugin to find complementary, split complementary, triad, tetrad, monochromatic, and analogous colors to a selected layer's fill.
+Select a FRAME from your design to easily make a "Cover" page for your design files.  Figma will then show this cover image in your project view instead of a zoomed out view of the first page of your design document.
 
 ## Figma Documentation
 Please see [Figma's Making Plugins](https://help.figma.com/article/331-making-plugins), their [Plugin Documentation](https://www.figma.com/plugin-docs/intro/), and view their [sample plugins](https://github.com/figma/plugin-samples) to get started learning about plugins today.
